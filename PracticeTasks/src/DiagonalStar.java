@@ -16,7 +16,7 @@ public class DiagonalStar {
                 boolean isFirstRowOrColum = row == 1 || column == 1;
                 boolean isLastRowOrColum = row == number || column == number;
                 boolean isDiagonal = row == column || column == (number - row + 1);
-                if (isFirstRowOrColum || isLastRowOrColum || isDiagonal){
+                if (isFirstRowOrColum || isLastRowOrColum || isDiagonal) {
                     System.out.print(star);
                 } else {
                     System.out.print(space);
