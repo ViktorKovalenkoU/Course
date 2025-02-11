@@ -1,0 +1,25 @@
+package oop.practice9;
+
+public class SalariedEmployee extends Employee {
+    public SalariedEmployee() {
+        super();
+    }
+
+    private double annualSalary;
+    private boolean isRetired;
+
+    public SalariedEmployee(String name, String birthDate, String hireDate, double annualSalary) {
+        super(name, birthDate, hireDate);
+        this.annualSalary = annualSalary;
+    }
+    @Override
+    public double collectPay(){
+        double paychek = annualSalary / 26;
+        double adjustedPay = (isRetired) ? 0.9 * paychek : paychek;
+        return (int) adjustedPay;
+    }
+    public void retire() {
+        terminate("10.10.2025");
+        isRetired = true;
+    }
+}
