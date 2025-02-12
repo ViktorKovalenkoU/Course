@@ -7,7 +7,8 @@ public class Rectangle {
     public Rectangle(double width, double length) {
         if (width < 0) {
             width = 0;
-        } else if (length < 0) {
+        }
+        if (length < 0) {
             length = 0;
         }
         this.width = width;
