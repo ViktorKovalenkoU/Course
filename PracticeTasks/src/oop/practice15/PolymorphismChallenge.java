@@ -25,21 +25,5 @@ public class PolymorphismChallenge {
         System.out.println(holden.startEngine());
         System.out.println(holden.accelerate());
         System.out.println(holden.brake());
-
-
-
-
-//        Scanner sc = new Scanner(System.in);
-//        while (true) {
-//            System.out.println("Enter Type (G for Gas powered car, E for Electric car, " +
-//                    "H for Hybrid car, or Q to quit): ");
-//            String type = sc.nextLine();
-//            if("Qq".contains(type)){
-//                break;
-//            }
-//            System.out.println("Enter your car: ");
-//            String description = sc.nextLine();
-//            Car car = Car.getCar(type,description);
-//            car.driveCar();
     }
 }
