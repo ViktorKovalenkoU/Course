@@ -1,11 +1,14 @@
 package oop.practice16;
 
-public class Burger extends MealOrder {
+public class Burger {
+    private double price;
+    private String type;
     private String topping1;
     private String topping2;
 
     public Burger(String type, String topping1, String topping2) {
-        super(type, setPriceByType(type) + setToppingPrice(topping1) + setToppingPrice(topping2));
+        this.type = type;
+        this.price = setPriceByType(type) + setToppingPrice(topping1) + setToppingPrice(topping2);
         this.topping1 = topping1;
         this.topping2 = topping2;
     }
@@ -46,5 +49,13 @@ public class Burger extends MealOrder {
 
     public String getTopping2() {
         return topping2;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getType() {
+        return type;
     }
 }

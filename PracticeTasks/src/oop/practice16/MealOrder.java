@@ -25,6 +25,5 @@ public class MealOrder {
         this.type = type;
         this.price = price;
     }
-
 }
 

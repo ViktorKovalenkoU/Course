@@ -26,5 +26,6 @@ public class SideItem {
             default:
                 throw new IllegalArgumentException("Unknown side item type: " + type);
         }
+
     }
 }

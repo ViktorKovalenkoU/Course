@@ -1,11 +1,14 @@
 package oop.practice16;
 
-public class Drink extends MealOrder {
+public class Drink {
+    private String type;
     private String size;
+    private double price;
 
     public Drink(String type, String size) {
-        super(type, getPriceBySize(type, size));
+        this.type = type;
         this.size = size;
+        this.price = getPriceBySize(type,size);
     }
 
     public String getSize() {
@@ -28,9 +31,11 @@ public class Drink extends MealOrder {
         throw new IllegalArgumentException("Unknown drink type: " + type);
     }
 
-    public static class Cola extends Drink {
-        public Cola(String size) {
-            super("Cola", size);
-        }
+    public String getType() {
+        return type;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }
