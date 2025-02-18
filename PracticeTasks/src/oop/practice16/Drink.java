@@ -1,13 +1,15 @@
 package oop.practice16;
 
-import oop.practice15.Car;
-
 public class Drink extends MealOrder {
     private String size;
 
     public Drink(String type, String size) {
         super(type, getPriceBySize(type, size));
         this.size = size;
+    }
+
+    public String getSize() {
+        return size;
     }
 
     private static double getPriceBySize(String type, String size) {

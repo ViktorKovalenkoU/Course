@@ -1,8 +1,20 @@
 package oop.practice16;
 
-public class SideItem extends MealOrder {
+public class SideItem {
+    private String type;
+    private double price;
+
     public SideItem(String type) {
-        super(type, setPriceByType(type));
+        this.type = type;
+        this.price = setPriceByType(type);
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     private static double setPriceByType(String type) {
