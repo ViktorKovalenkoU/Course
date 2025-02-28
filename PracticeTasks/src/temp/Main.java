@@ -2,11 +2,13 @@ package temp;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-
+/*
         String str = "God bless America";
         char chr = 'G';
         int number = 5;
@@ -75,9 +77,21 @@ public class Main {
         for (int i = 0; i < len; i++) {
             newInt[i] = random.nextInt(100);
         }
-        return newInt;
+        return newInt;*/
 
+       /* String[] originalArray = new String[] {"First","Second","Third","Fourth"};
+        var originalList = Arrays.asList(originalArray);
+        System.out.println(originalList);
 
+        originalList.set(0,"one");
+        System.out.println("list: " + originalList);
+        System.out.println("array: " + Arrays.toString(originalArray));
+
+        originalList.sort(Comparator.naturalOrder());
+        System.out.println("array: " + Arrays.toString(originalArray));
+
+        List<String> newList = Arrays.asList("Sunday","Monday","Tuesday");
+        System.out.println(newList);*/
     }
 
 }
