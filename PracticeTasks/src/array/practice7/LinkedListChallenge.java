@@ -1,6 +1,8 @@
 package array.practice7;
 
 import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class LinkedListChallenge {
     public static void main(String[] args) {
@@ -15,6 +17,13 @@ public class LinkedListChallenge {
         placesList.add(new Place("Melbourne", 877));
         placesList.add(new Place("Adelaide", 1374));
         placesList.add(new Place("Perth", 3923));
+
+        Collections.sort(placesList, new Comparator<Place>() {
+            @Override
+            public int compare(Place p1, Place p2) {
+                return Integer.compare(p1.getDistance(), p2.getDistance());
+            }
+        });
 
         Scanner sc = new Scanner(System.in);
         String textBlock = """
