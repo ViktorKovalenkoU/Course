@@ -8,8 +8,12 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println(solve(4,6,2.5));
+
+        System.out.println("Hello world");
     }
+
 
         public static String solve ( double a, double b, double c){
             if (a == 0) {
