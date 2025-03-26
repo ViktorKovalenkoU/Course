@@ -1,4 +1,4 @@
-package practice.Interfaces;
+package challenges.practice.Interfaces;
 
 public class Test {
     public static void main(String[] args) {

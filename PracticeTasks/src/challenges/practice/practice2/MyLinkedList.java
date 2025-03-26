@@ -1,4 +1,4 @@
-package practice.practice2;
+package challenges.practice.practice2;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

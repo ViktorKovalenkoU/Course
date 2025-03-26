@@ -1,4 +1,4 @@
-package practice.Interfaces;
+package challenges.practice.Interfaces;
 
 enum FlightStages implements Trackable {
     GROUNDED, LAUNCH, CRUISE, DATA_COLLECTION;

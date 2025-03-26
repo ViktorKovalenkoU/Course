@@ -1,4 +1,4 @@
-package practice.practice2;
+package challenges.practice.practice2;
 
 public class DataStructures {
     public static void main(String[] args) {

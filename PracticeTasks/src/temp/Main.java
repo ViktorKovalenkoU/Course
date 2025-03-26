@@ -8,6 +8,32 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println(solve(4,6,2.5));
+    }
+
+        public static String solve ( double a, double b, double c){
+            if (a == 0) {
+                throw new IllegalArgumentException();
+            }
+            double res = (-b + (b * 2 - 4 * a * c)) / 2 * a;
+            return String.valueOf(res);
+        }
+    }
+
+
+/*        if (n == null || !n.matches("\\d+")) {
+            throw new IllegalArgumentException();
+        }
+
+        int num = Integer.parseInt(n);
+        int res = 1;
+        for (int i = 1; i <= num; i++) {
+            res *= i;
+        }
+        return String.valueOf(res);
+    }
+}*/
+
 /*
         String str = "God bless America";
         char chr = 'G';
@@ -92,6 +118,4 @@ public class Main {
 
         List<String> newList = Arrays.asList("Sunday","Monday","Tuesday");
         System.out.println(newList);*/
-    }
 
-}

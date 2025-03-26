@@ -1,6 +1,5 @@
-package practice.Interfaces;
+package challenges.practice.Interfaces;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

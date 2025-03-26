@@ -1,6 +1,4 @@
-package practice.practice2;
-
-import java.util.List;
+package challenges.practice.practice2;
 
 abstract class ListItem {
     protected ListItem rightLink;

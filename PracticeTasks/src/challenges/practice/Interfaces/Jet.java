@@ -1,4 +1,4 @@
-package practice.Interfaces;
+package challenges.practice.Interfaces;
 
 public class Jet implements FlightEnabled, Trackable{
 

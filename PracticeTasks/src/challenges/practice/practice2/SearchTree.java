@@ -1,4 +1,4 @@
-package practice.practice2;
+package challenges.practice.practice2;
 
 class SearchTree implements NodeList {
     private ListItem root;

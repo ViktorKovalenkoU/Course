@@ -1,4 +1,4 @@
-package practice.practice2;
+package challenges.practice.practice2;
 
 class Node extends ListItem {
     public Node(Object value) {

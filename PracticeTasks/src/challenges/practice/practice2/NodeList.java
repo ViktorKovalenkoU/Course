@@ -1,4 +1,4 @@
-package practice.practice2;
+package challenges.practice.practice2;
 
 interface NodeList {
      ListItem getRoot();
