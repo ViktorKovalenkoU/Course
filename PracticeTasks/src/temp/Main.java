@@ -1,15 +1,40 @@
 package temp;
 
 import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(solve(4,6,2.5));
+        String name = "Kevin";
+        List<String> list = new ArrayList<>();
+        int times = 10;
+        System.out.println(times + fill(list, name + name, times));
     }
+    public static int fill(Collection<String> collection, String str, int times){
+        String shrunk = shrink(str);
+        times = (times + shrunk.length()) / 2;
+        for (int i = 0; i < times / 2; i++) {
+            collection.add(shrunk);
+        }
+        return times;
+    }
+
+    public static String shrink(String str){
+        int newLength = str.length() / 2 + str.length() % 2;
+        char[] chars = new char[newLength];
+        for (int i = 0; i < str.length(); i+=2) {
+            chars[i / 2] = str.charAt(i);
+        }
+        return new String(chars);
+    }
+}
+
+/*
+        System.out.println(solve(4,6,2.5));
+
+        System.out.println("Hello world");
+    }
+
 
         public static String solve ( double a, double b, double c){
             if (a == 0) {
@@ -18,7 +43,7 @@ public class Main {
             double res = (-b + (b * 2 - 4 * a * c)) / 2 * a;
             return String.valueOf(res);
         }
-    }
+    }*/
 
 
 /*        if (n == null || !n.matches("\\d+")) {
