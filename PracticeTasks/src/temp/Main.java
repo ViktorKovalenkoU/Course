@@ -1,11 +1,16 @@
 package temp;
 
-import java.lang.reflect.Array;
-import java.util.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        String name = "Kevin";
+        int arr[]= {5,6,3,7,8,3,1,9};
+        Arrays.stream(arr).sorted().limit(3).forEach(value -> System.out.println(value));
+
+
+    }
+}
+ /*       String name = "Kevin";
         List<String> list = new ArrayList<>();
         int times = 10;
         System.out.println(times + fill(list, name + name, times));
@@ -27,7 +32,7 @@ public class Main {
         }
         return new String(chars);
     }
-}
+}*/
 
 /*
         System.out.println(solve(4,6,2.5));
