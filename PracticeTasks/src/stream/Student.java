@@ -1,8 +1,6 @@
-package temp;
+package stream;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Student {
@@ -65,7 +63,7 @@ public class Student {
                 .mapToInt(s -> s.getSubjects().size())
                 .average()
                 .orElse(0);
-        System.out.printf("%.2f\n",  averageSubjectCount);
+        System.out.printf("%.2f\n", averageSubjectCount);
 
         List<String> englishStudentsByAge = students.stream()
                 .filter(s -> s.getSubjects().contains("English"))
@@ -73,7 +71,58 @@ public class Student {
                 .map(Student::getName)
                 .collect(Collectors.toList());
         System.out.println(englishStudentsByAge);
+
+        List<String> top3Subjects2 = subjectToStudents.entrySet().stream()
+                .sorted(Comparator.comparing(e -> e.getValue().size(), Comparator.reverseOrder()))
+                .limit(3)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+        System.out.println(top3Subjects2);
+
+        List<String> allMath = students.stream()
+                .filter(s -> s.getSubjects().contains("Math"))
+                .map(Student::getName)
+                .collect(Collectors.toList());
+        System.out.println("Math is studied by: " + allMath);
+
+        long biologyStudents = students.stream()
+                .filter(s -> s.getSubjects().contains("Biology"))
+                .count();
+        System.out.println("Biology is taught by " + biologyStudents + " students.");
+
+        Set<String> uniqueSubjects = students.stream()
+                .flatMap(s -> s.getSubjects().stream().distinct())
+                .collect(Collectors.toSet());
+        System.out.println("List of subjects: " + uniqueSubjects);
+
+        Map<Integer, List<Student>> groupedByAge = students.stream()
+                .collect(Collectors.groupingBy(Student::getAge));
+        System.out.println("Students grouped by age: " + groupedByAge);
+
+        String oldestStudent = students.stream()
+                .max(Comparator.comparingInt(Student::getAge))
+                .map(Student::getName)
+                .orElse("Немає студентів");
+        System.out.println("Oldest student: " + oldestStudent);
+
+        List<Student> moreThan2Subjects = students.stream()
+                .filter(s -> s.getSubjects().size() > 2)
+                .collect(Collectors.toList());
+        System.out.println("Students studying more than 2 subjects: " + moreThan2Subjects);
+
+        List<String> alphabetStudentsList = students.stream()
+                .map(Student::getName)
+                .sorted()
+                .collect(Collectors.toList());
+        System.out.println("List of students in alphabetical order: " + alphabetStudentsList);
+
+        List<String> lengthNameSort = students.stream()
+                .map(Student::getName)
+                .sorted(Comparator.comparingInt(String::length))
+                .collect(Collectors.toList());
+        System.out.println("Sorted by students name length: " + lengthNameSort);
     }
+
 
     String name;
     int age;
@@ -107,5 +156,10 @@ public class Student {
 
     public void setSubjects(List<String> subjects) {
         this.subjects = subjects;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
