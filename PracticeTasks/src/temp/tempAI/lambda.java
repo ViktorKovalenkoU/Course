@@ -1,4 +1,9 @@
-import java.util.*;
+/*
+import oop.practice3.Person;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -86,7 +91,8 @@ public class lambda {
 
 }
 
-class Person {
+*/
+/*class Person {
     String name;
     int ageAge;
 
@@ -100,6 +106,5 @@ class Person {
         return "Person{" +
                 "age='" + name + '\'' +
                 ", ageAge=" + ageAge +
-                '}';
-    }
-}
+                '}'; *//*
+
