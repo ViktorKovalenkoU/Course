@@ -1,3 +1,5 @@
+package temp.temp1;
+
 import java.util.Objects;
 
 public class User {

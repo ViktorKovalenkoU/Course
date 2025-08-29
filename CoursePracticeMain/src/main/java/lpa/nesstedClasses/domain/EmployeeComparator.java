@@ -1,4 +1,4 @@
-package org.example;
+package lpa.nesstedClasses.domain;
 
 import java.util.Comparator;
 

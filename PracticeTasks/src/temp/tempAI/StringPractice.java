@@ -1,5 +1,7 @@
-import java.util.*;
-import java.util.stream.Collectors;
+package temp.tempAI;
+
+import java.util.Arrays;
+import java.util.Set;
 
 public class StringPractice {
     public static void main(String[] args) {
