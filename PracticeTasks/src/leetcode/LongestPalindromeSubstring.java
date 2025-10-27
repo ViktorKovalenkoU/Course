@@ -4,15 +4,19 @@ public class LongestPalindromeSubstring {
     public static void main(String[] args) {
         String s1 = "babad";
         String s2 = "cbbd";
+        String s3 = "ccc";
 
         System.out.println(longestPalindromeBruteForce(s1));
         System.out.println(longestPalindromeBruteForce(s2));
+        System.out.println(longestPalindromeBruteForce(s3));
 
         System.out.println(longestPalindromeDP(s1));
         System.out.println(longestPalindromeDP(s2));
+        System.out.println(longestPalindromeDP(s3));
 
         System.out.println(longestPalindromeExpandAroundCenter(s1));
         System.out.println(longestPalindromeExpandAroundCenter(s2));
+        System.out.println(longestPalindromeExpandAroundCenter(s3));
     }
 
     public static String longestPalindromeBruteForce(String s) {
@@ -60,7 +64,7 @@ public class LongestPalindromeSubstring {
         }
 
         for (int len = 3; len <= n; len++) {
-            for (int i = 0; i < n - len; i++) {
+            for (int i = 0; i <= n - len; i++) {
                 int j = i + len - 1;
                 if (s.charAt(i) == s.charAt(j) && dp[i + 1][j - 1]) {
                     dp[i][j] = true;
