@@ -1,11 +1,13 @@
 package temp;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        int arr[]= {5,6,3,7,8,3,1,9};
-        Arrays.stream(arr).sorted().limit(3).forEach(value -> System.out.println(value));
+
+
+
+
+        /*int arr[]= {5,6,3,7,8,3,1,9};
+        Arrays.stream(arr).sorted().limit(3).forEach(value -> System.out.println(value));*/
 
 
     }
