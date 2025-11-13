@@ -1,18 +1,23 @@
 package temp;
 
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Stream;
+
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println("abc");
+        String cde = "cde";
+        System.out.println("abc" + cde);
+        String c = "abc".substring(2,3);
+        String d = cde.substring(1,2);
+        System.out.println(c + d);
+        String value = ("abc" + cde).substring(1,4);
+        System.out.println(value);
 
-
-
-        /*int arr[]= {5,6,3,7,8,3,1,9};
-        Arrays.stream(arr).sorted().limit(3).forEach(value -> System.out.println(value));*/
-
-
-    }
-}
- /*       String name = "Kevin";
+        
+     /*   String name = "Kevin";
         List<String> list = new ArrayList<>();
         int times = 10;
         System.out.println(times + fill(list, name + name, times));
@@ -33,8 +38,9 @@ public class Main {
             chars[i / 2] = str.charAt(i);
         }
         return new String(chars);
+    }*/
     }
-}*/
+}
 
 /*
         System.out.println(solve(4,6,2.5));

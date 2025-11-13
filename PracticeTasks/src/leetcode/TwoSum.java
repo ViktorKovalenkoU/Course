@@ -15,6 +15,6 @@ public class TwoSum {
                 }
             }
         }
-        throw new IllegalArgumentException("Mo two sum solution found");
+        throw new IllegalArgumentException("No two sum solution found");
     }
 }
