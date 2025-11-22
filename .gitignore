@@ -1,3 +1,18 @@
-.idea/
-*.iml
+# Java compiled files
 *.class
+
+# IntelliJ project structure (зберігаємо для модулів)
+!.idea/
+!*.iml
+
+# Maven / Gradle build artifacts
+target/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE backups
+*.swp
+*.bak
