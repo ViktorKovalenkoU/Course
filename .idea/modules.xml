@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/AreaClaculator/AreaClaculator.iml" filepath="$PROJECT_DIR$/RandomPractice/AreaClaculator/AreaClaculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/CalculateInterest/CalculateInterest.iml" filepath="$PROJECT_DIR$/RandomPractice/CalculateInterest/CalculateInterest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Course.iml" filepath="$PROJECT_DIR$/.idea/Course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/DayOfTheWeekChallenge/DayOfTheWeekChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/DayOfTheWeekChallenge/DayOfTheWeekChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/DigitSumChallenge/DigitSumChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/DigitSumChallenge/DigitSumChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/DigitSumChallenge/DigitSumChallenge1.iml" filepath="$PROJECT_DIR$/RandomPractice/DigitSumChallenge/DigitSumChallenge1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/EqualityPrinter/EqualityPrinter.iml" filepath="$PROJECT_DIR$/RandomPractice/EqualityPrinter/EqualityPrinter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/EvenDigitSum/EvenDigitSum.iml" filepath="$PROJECT_DIR$/RandomPractice/EvenDigitSum/EvenDigitSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/FirstLastDigitSum/FirstLastDigitSum.iml" filepath="$PROJECT_DIR$/RandomPractice/FirstLastDigitSum/FirstLastDigitSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/RandomPractice/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" filepath="$PROJECT_DIR$/RandomPractice/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/KeywordsAndExpressions/KeywordsAndExpressions.iml" filepath="$PROJECT_DIR$/RandomPractice/KeywordsAndExpressions/KeywordsAndExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/MethodChallenge/MethodChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/MethodChallenge/MethodChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/MethodOverloading/MethodOverloading.iml" filepath="$PROJECT_DIR$/RandomPractice/MethodOverloading/MethodOverloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/MinutesToYearsAndDaysCalculator/MinutesToYearsAndDaysCalculator.iml" filepath="$PROJECT_DIR$/RandomPractice/MinutesToYearsAndDaysCalculator/MinutesToYearsAndDaysCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/NumberInWord/NumberInWord.iml" filepath="$PROJECT_DIR$/RandomPractice/NumberInWord/NumberInWord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" filepath="$PROJECT_DIR$/RandomPractice/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/NumberPalindrome/NumberPalindrome.iml" filepath="$PROJECT_DIR$/RandomPractice/NumberPalindrome/NumberPalindrome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/PlayingCat/PlayingCat.iml" filepath="$PROJECT_DIR$/RandomPractice/PlayingCat/PlayingCat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticeTasks/PracticeTasks.iml" filepath="$PROJECT_DIR$/PracticeTasks/PracticeTasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/SharedDigit/SharedDigit.iml" filepath="$PROJECT_DIR$/RandomPractice/SharedDigit/SharedDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/StatementsWhiteSpaceAndIndenting/StatementsWhiteSpaceAndIndenting.iml" filepath="$PROJECT_DIR$/RandomPractice/StatementsWhiteSpaceAndIndenting/StatementsWhiteSpaceAndIndenting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Sum3and5Challenge/Sum3and5Challenge.iml" filepath="$PROJECT_DIR$/RandomPractice/Sum3and5Challenge/Sum3and5Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/SumOdd/SumOdd.iml" filepath="$PROJECT_DIR$/RandomPractice/SumOdd/SumOdd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/SwitchChallenge/SwitchChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/SwitchChallenge/SwitchChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test/Test.iml" filepath="$PROJECT_DIR$/RandomPractice/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test2/Test2.iml" filepath="$PROJECT_DIR$/RandomPractice/Test2/Test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test3/Test3.iml" filepath="$PROJECT_DIR$/RandomPractice/Test3/Test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test4/Test4.iml" filepath="$PROJECT_DIR$/RandomPractice/Test4/Test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test5/Test5.iml" filepath="$PROJECT_DIR$/RandomPractice/Test5/Test5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test6/Test6.iml" filepath="$PROJECT_DIR$/RandomPractice/Test6/Test6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/Test7/Test7.iml" filepath="$PROJECT_DIR$/RandomPractice/Test7/Test7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/TheForLoopChallenge/TheForLoopChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/TheForLoopChallenge/TheForLoopChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomPractice/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" filepath="$PROJECT_DIR$/RandomPractice/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" />
+    </modules>
+  </component>
+</project>
