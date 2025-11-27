@@ -17,6 +17,8 @@ public class BubbleSort {
         for (String word : words) {
             System.out.println(word);
         }
+        System.out.println("------------------");
+        System.out.println(sortChecker(words));
     }
 
     public static void bubbleSort(String[] arr) {
@@ -61,9 +63,9 @@ public class BubbleSort {
         }
     }
 
-    public static boolean sortChecker(String[] arr) {
+    public static <T extends Comparable<T>> boolean sortChecker(String[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            if (!(arr[i].compareTo(arr[i + 1]) < 0)) {
+            if ((arr[i].compareTo(arr[i + 1]) > 0)) {
                 return false;
             }
         }
