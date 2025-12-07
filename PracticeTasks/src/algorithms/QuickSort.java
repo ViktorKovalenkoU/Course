@@ -10,7 +10,8 @@ public class QuickSort {
 
         System.out.println("\n-------------");
 
-        String[] words = {"Peanut", "Apple", "Banana", "Orange"};
+        String[] words = {"Peanut", "Apple", "Banana", "Orange", "Tamarillo", "Coconut"};
+
         quickStringSort(words, 0, words.length - 1);
         for (String word : words) {
             System.out.print(word + " ");
@@ -18,6 +19,25 @@ public class QuickSort {
 
         System.out.println("\n-------------");
 
+        quickLengthStringSort(words, 0, words.length - 1);
+        for (String word : words) {
+            System.out.print(word + " ");
+        }
+
+        System.out.println("\n-------------");
+
+        quickMidStringSort(words, 0, words.length - 1);
+        for (String word : words) {
+            System.out.print(word + " ");
+        }
+    }
+
+    public static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
     }
 
     private static int partition(int[] arr, int low, int high) {
@@ -35,8 +55,15 @@ public class QuickSort {
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
-
         return i + 1;
+    }
+
+    public static void quickStringSort(String[] arr, int low, int high) {
+        if (low < high) {
+            int pi = stringPartition(arr, low, high);
+            quickStringSort(arr, low, pi - 1);
+            quickStringSort(arr, pi + 1, high);
+        }
     }
 
     private static int stringPartition(String[] arr, int low, int high) {
@@ -44,7 +71,7 @@ public class QuickSort {
         int i = low - 1;
 
         for (int j = low; j < high; j++) {
-            if (arr[j].compareTo(pivot) < 0) {
+            if (arr[j].compareTo(pivot) <= 0) {
                 i++;
                 String temp = arr[i];
                 arr[i] = arr[j];
@@ -54,25 +81,63 @@ public class QuickSort {
         String temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
-
         return i + 1;
     }
 
-    public static void quickSort(int[] arr, int low, int high) {
+    public static void quickLengthStringSort(String[] arr, int low, int high) {
         if (low < high) {
-            int pi = partition(arr, low, high);
-
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
+            int pi = stringLengthPartition(arr, low, high);
+            quickLengthStringSort(arr, low, pi - 1);
+            quickLengthStringSort(arr, pi + 1, high);
         }
     }
 
-    public static void quickStringSort(String[] arr, int low, int high) {
-        if (low < high) {
-            int pi = stringPartition(arr, low, high);
+    private static int stringLengthPartition(String[] arr, int low, int high) {
+        String pivot = arr[high];
+        int i = low - 1;
 
-            quickStringSort(arr, low, pi - 1);
-            quickStringSort(arr, low + 1, high);
+        for (int j = low; j < high; j++) {
+            if (arr[j].length() <= pivot.length()) {
+                i++;
+                String temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
+        String temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+        return i + 1;
+    }
+
+    public static void quickMidStringSort(String[] arr, int low, int high) {
+        if (low < high) {
+            int pi = stringMidPartition(arr, low, high);
+            quickMidStringSort(arr, low, pi - 1);
+            quickMidStringSort(arr, pi + 1, high);
+        }
+    }
+
+    private static int stringMidPartition(String[] arr, int low, int high) {
+        int mid = (low + high) / 2;
+        String tmp = arr[mid];
+        arr[mid] = arr[high];
+        arr[high] = tmp;
+
+        String pivot = arr[high];
+        int i = low - 1;
+
+        for (int j = low; j < high; j++) {
+            if (arr[j].compareTo(pivot) <= 0) {
+                i++;
+                String temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        String temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+        return i + 1;
     }
 }
