@@ -4,6 +4,9 @@ public class CountingSort {
     public static void main(String[] args) {
         String[] words = {"Peanut", "Apple", "Banana", "Orange", "Tamarillo", "Coconut"};
         countingSort(words);
+
+        System.out.println("\n-------------------");
+
         for (String word : words) {
             System.out.print(word + " ");
         }
